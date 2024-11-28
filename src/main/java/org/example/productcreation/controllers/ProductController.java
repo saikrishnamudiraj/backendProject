@@ -16,7 +16,7 @@ public class ProductController {
 
     ProductService productService;
 
-    public ProductController(@Qualifier("selfProductService") ProductService productService) {
+    public ProductController(@Qualifier("FakeStoreProductService") ProductService productService) {
         this.productService = productService;
     }
 
@@ -38,6 +38,7 @@ public class ProductController {
 
     @GetMapping("/product")
     public List<Product> getAllProducts() {
-        return null;
+
+        return productService.getAllProducts();
     }
 }
