@@ -1,9 +1,9 @@
-package org.example.productservice.Dtos;
+package org.example.productcreation.Dtos;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.example.productservice.models.Category;
-import org.example.productservice.models.Product;
+import org.example.productcreation.models.Category;
+import org.example.productcreation.models.Product;
 
 @Getter
 @Setter

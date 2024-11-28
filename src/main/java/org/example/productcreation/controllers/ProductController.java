@@ -1,7 +1,7 @@
-package org.example.productservice.controllers;
+package org.example.productcreation.controllers;
 
-import org.example.productservice.models.Product;
-import org.example.productservice.services.ProductService;
+import org.example.productcreation.models.Product;
+import org.example.productcreation.services.ProductService;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

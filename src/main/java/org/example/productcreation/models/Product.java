@@ -1,4 +1,4 @@
-package org.example.productservice.models;
+package org.example.productcreation.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

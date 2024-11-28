@@ -1,8 +1,8 @@
-package org.example.productservice.services;
+package org.example.productcreation.services;
 
-import org.example.productservice.Dtos.FakeStoreProductDto;
-import org.example.productservice.models.Category;
-import org.example.productservice.models.Product;
+import org.example.productcreation.Dtos.FakeStoreProductDto;
+import org.example.productcreation.models.Category;
+import org.example.productcreation.models.Product;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;

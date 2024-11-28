@@ -1,4 +1,4 @@
-package org.example.productservice.models;
+package org.example.productcreation.models;
 
 public class BaseModel {
     private long id;
