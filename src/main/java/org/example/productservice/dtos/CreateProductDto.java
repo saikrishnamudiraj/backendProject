@@ -14,14 +14,14 @@ public class CreateProductDto {
     private double price;
     private String description;
     private String category;
-    private String image;
+    private String imageUrl;
 
     public CreateProductDto(String title, double price, String description, String category, String image) {
         this.title = title;
         this.price = price;
         this.description = description;
         this.category = category;
-        this.image = image;
+        this.imageUrl = image;
     }
 
 }

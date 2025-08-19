@@ -14,18 +14,19 @@ public class FakeStoreProductDto {
     private double price;
     private String description;
     private String category;
-    private String image;
+    private String imageUrl;
 
     public Product toProduct(){
         Product product = new Product();
         product.setId(id);
-        product.setName(title);
+        product.setTitle(title);
         product.setDescription(description);
         product.setPrice(price);
+        product.setImageUrl(imageUrl);
 
         Category category1 = new Category();
-        category1.setName(category);
-        //product.setCategory(category1);
+        category1.setTitle(category);
+        product.setCategory(category1);
 
         return product;
     }

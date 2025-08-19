@@ -4,6 +4,8 @@ import org.example.productservice.dtos.CreateProductDto;
 import org.example.productservice.exceptions.ProductNotFoundException;
 import org.example.productservice.model.Product;
 import org.example.productservice.service.ProductService;
+import org.example.productservice.service.SelfProductService;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -14,7 +16,8 @@ import java.util.List;
 public class ProductController {
     public ProductService productService;
 
-    public ProductController(ProductService productService){
+
+    public ProductController(@Qualifier("selfProductService") ProductService productService){
         this.productService = productService;
     }
 
@@ -44,7 +47,7 @@ public class ProductController {
                 createProductDto.getPrice(),
                 createProductDto.getDescription(),
                 createProductDto.getCategory(),
-                createProductDto.getImage());
+                createProductDto.getImageUrl());
         return product;
     }
 }
